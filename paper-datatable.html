@@ -1102,7 +1102,7 @@ A [material design implementation of a data table](https://www.google.com/design
 					}
 				},
 				_updateHeaderColumn: function(event){
-					let column = Polymer.dom(event).localTarget;
+					var column = Polymer.dom(event).localTarget;
 					this.notifyPath(`_columns.${column.index}.header`, this._columns[column.index].header);
 				},
 
