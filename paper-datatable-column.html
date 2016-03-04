@@ -350,13 +350,13 @@ This element is used inside of `<paper-datatable>` to declare the columns to be 
 						}
 					}
 
-					if(this.type.toLowerCase() == 'string'){
+					if(value && this.type.toLowerCase() == 'string'){
 						return value.toString();
-					}else if(this.type.toLowerCase() == 'number'){
+					}else if(value && this.type.toLowerCase() == 'number'){
 						return parseFloat(value);
-					}else if(this.type.toLowerCase() == 'boolean'){
+					}else if(value && this.type.toLowerCase() == 'boolean'){
 						return value ? true : false;
-					}else if(this.type.toLowerCase() == 'date'){
+					}else if(value && this.type.toLowerCase() == 'date'){
 						return new Date(value);
 					}else{
 						return value;
