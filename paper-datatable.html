@@ -951,7 +951,6 @@ A [material design implementation of a data table](https://www.google.com/design
 					if(!triggeredEvent.defaultPrevented && !dialogInitialized){
 						if(path[0].nodeName.toLowerCase() == 'td' || (ev.model.column && !ev.model.column.editable)){
 							this._toggleSelection(rowModel.rowKey);
-							ev.preventDefault();
 						}
 					}else{
 						ev.preventDefault();
